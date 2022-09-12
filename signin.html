@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/e6a8c55699.js" crossorigin="anonymous"></script>
+
+<title>Buildmart</title>
+<style>
+h1 {
+margin-left: 50px;
+font-size: 50px;
+margin-top: 40px;
+color: rgb(222, 222, 222);
+text-align: left;
+}
+
+.back {
+/* background-color: rgb(97, 97, 97); */
+background-image: url('https://hdqwalls.com/wallpapers/purple-sky-clouds-mountains-4k-rc.jpg');
+background-size: cover;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: rgb(5, 5, 5);
+
+}
+
+li {
+float: right;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 17px 30px;
+text-decoration: none;
+font-size: 20px;
+
+
+}
+
+li a:hover {
+background-color: #111;
+}
+
+/* div {
+margin-left:100px;
+margin-right:100px;
+margin-top:30px;
+background-color: rgb(50, 48, 48);
+height: 1500px;
+padding-top:30px;
+
+} */
+/* * {
+box-sizing: border-box;
+}
+
+.column {
+float: left;
+width: 30%;
+padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.column {
+float: left;
+width: 30%;
+padding: 5px;
+}
+
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+.img {
+text-align:center ;
+color: rgb(113, 114, 115);
+margin-right:20px;
+margin-left: 20px;
+} 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  /* border: 3px solid green;  */
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 15%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+
+<body class="back">
+    
+<h1> <i class="fa-sharp fa-solid fa-building" style="color:rgb(109, 218, 192);font-size:50px;"></i> Buildmart</h1>
+<div>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a class="active"  href="#signin">SignIn</a></li>
+<li><a href="#news">Shopping</a></li>
+<li><a href="#news">About</a></li>
+<li><a href="#news">Help</a></li>
+<li><a href="#contact">Contact</a></li>
+<!-- 
+    <li><a href="#about">About</a></li> -->
+
+</ul>
+
+<h2 style="color: aliceblue;margin-top: 100px;text-align: center;font-size: 30px;;">Click here to login</h2>
+<div class="center">
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+</div>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<!-- <footer>
+  <b><p style="text-align: center;color:#cac7c7;font-size:20px;">Copyright@2022.All rights reserved</p></b>
+</footer> -->
+</body>
+
+</html>
